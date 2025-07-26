@@ -17,7 +17,6 @@ Open the terminal and test:
 
 ```bash
 conda --version
-
 ```
 
 You should see something like `conda 25.x.x`
@@ -28,15 +27,13 @@ You should see something like `conda 25.x.x`
 conda create -n dragonfruit python=3.14
 conda activate dragonfruit
 python --version
-
 ```
 
-### 4. Clone the Repositories
+### 4. Add ThermoMPNN and ProteinMPNN as submodules
 
 ```bash
-git clone https://github.com/dauparas/ProteinMPNN.git
-git clone https://github.com/Kuhlman-Lab/ThermoMPNN.git
-
+git submodule add https://github.com/dauparas/ProteinMPNN.git ProteinMPNN
+git submodule add https://github.com/Kuhlman-Lab/ThermoMPNN.git ThermoMPNN
 ```
 
 ### 5. Verify Downloads
@@ -48,7 +45,6 @@ dragonfruit-thermompnn/
 ├── ProteinMPNN/
 ├── ThermoMPNN/
 └── README.md
-
 ```
 
 ### 6. Activate Environment
@@ -57,7 +53,6 @@ Activate your environment before working:
 
 ```bash
 conda activate dragonfruit
-
 ```
 
 ### 7. Installing ProteinMPNN and ThermoMPNN Dependencies
@@ -66,14 +61,12 @@ conda activate dragonfruit
 
 ```bash
 conda install pytorch pytorch-cuda=11.8 pytorch-lightning -c pytorch -c nvidia -c conda-forge
-
 ```
 
 **Install all other dependencies:**
 
 ```bash
 conda install numpy joblib omegaconf pandas tqdm mmseqs2 wandb biopython -c bioconda -c conda-forge -c anaconda
-
 ```
 
 **Check GPU recognition (should return True)**
@@ -81,7 +74,6 @@ conda install numpy joblib omegaconf pandas tqdm mmseqs2 wandb biopython -c bioc
 ```bash
 python -c 'import torch; print(torch.cuda.is_available())'
 cd ..
-
 ```
 
 ### 8. Test Installation
