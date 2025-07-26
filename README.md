@@ -1,5 +1,3 @@
-# 
-
 # dragonfruit-thermompnn
 
 ## Installation Steps
@@ -22,12 +20,12 @@ conda --version
 
 ```
 
-You should see something like `conda 23.x.x`
+You should see something like `conda 25.x.x`
 
 ### 3. Create Environment
 
 ```bash
-conda create -n dragonfruit python=3.10
+conda create -n dragonfruit python=3.14
 conda activate dragonfruit
 python --version
 
@@ -36,8 +34,8 @@ python --version
 ### 4. Clone the Repositories
 
 ```bash
-git clone <https://github.com/dauparas/ProteinMPNN.git>
-git clone <https://github.com/Kuhlman-Lab/ThermoMPNN.git>
+git clone https://github.com/dauparas/ProteinMPNN.git
+git clone https://github.com/Kuhlman-Lab/ThermoMPNN.git
 
 ```
 

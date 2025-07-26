@@ -1,0 +1,6 @@
+[submodule "ProteinMPNN"]
+	path = ProteinMPNN
+	url = https://github.com/dauparas/ProteinMPNN.git
+[submodule "ThermoMPNN"]
+	path = ThermoMPNN
+	url = https://github.com/Kuhlman-Lab/ThermoMPNN.git
