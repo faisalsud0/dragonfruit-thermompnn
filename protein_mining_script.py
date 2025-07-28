@@ -540,8 +540,8 @@ def main():
     """Main execution function with example usage."""
     
     # CONFIGURATION - MODIFY THESE VALUES
-    EMAIL = "alrajihsaad@gmail.com"  # REQUIRED: Your email for NCBI
-    API_KEY = "f8d15735b147912be28808a1d150f65c2207"  # OPTIONAL: Your NCBI API key for higher rate limits
+    EMAIL = "your.email@domain.com"  # REQUIRED: Your email for NCBI
+    API_KEY = None  # OPTIONAL: Get your NCBI API key from https://www.ncbi.nlm.nih.gov/account/
     CSV_FILE = r"C:\Users\alraj\Downloads\Data Collection - Litereature Info.csv"  # Your input CSV file
     OUTPUT_PREFIX = "plant_stress_proteins"  # Prefix for output files
     
