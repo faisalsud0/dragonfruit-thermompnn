@@ -142,8 +142,8 @@ def test_repository_structure():
     # Check for key files in ThermoMPNN
     if thermompnn_exists:
         key_files = [
-            thermompnn_path / "thermompnn",
-            thermompnn_path / "setup.py",
+            thermompnn_path / "train_thermompnn.py",
+            thermompnn_path / "datasets.py",
         ]
         
         for file_path in key_files:
